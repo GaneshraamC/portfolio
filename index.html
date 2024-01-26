@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <!--link CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <header class="navbar">
+        <a href="#home" class="logo">Portfolio</a>
+        <nav class="Navlinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#Contact_me">Contact</a>
+        </nav>
+    </header>
+    <!-- Navlinks responsive Bar
+        <header>
+        <div class="navlinks-responsive-bar" onclick="showNav()">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </header> -->
+
+
+    <!--main section-->
+
+    <div class="container">
+        <div class="details">
+            <h1>Ganeshram C</h1>
+            <h3>I'm a <span>Web Developer</span></h3>
+            <p>I have two years of experience in software testing.
+                <br>Currently, I love to work on web technologies like HTML,CSS,JS and React JS
+            </p>
+
+            <!-- social media icons -->
+
+            <a href="https://www.linkedin.com/in/ganeshram-c/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:ganeshramc0703@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/GaneshraamC" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <br>
+            <!-- CVPDF -->
+            <button type="submit" class="button"><a href="" download="./Ganesh 2yrs Exp Resume.pdf"
+                    style="color: black;"> Download CV</a></button>
+        </div>
+        <div class="img">
+            <img src="myimg.jpg" alt="my pic">
+        </div>
+    </div>
+
+
+    <!-- Aboutcontent -->
+    <section id="About">
+        <div class="Aboutmyself">
+            <h1>About</h1>
+            <p>"Hello, I'm a passionate front-end developer with a flair for design and a dedication to crafting
+                user-friendly websites.</p>
+            <p> My expertise lies in HTML, CSS, and JavaScript, along with proficiency in modern libraries and
+                frameworks such as React.js </p>
+        </div>
+    </section>
+
+    <!--projects-->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project_container">
+            <div class="Project_details">
+                <img src="AttiresSS (4).png" alt="Attires">
+                <h2>E-Commerce Project</h2>
+                <p>
+                    For my initial web development project, I developed one simple E-commerce website for an online
+                    clothing store using HTML, CSS, and JavaScript. The result is a responsive, user-friendly site with
+                    a modern design. I utilized Flexbox for layout, ensuring functionality and visual appeal. The
+                    project enhanced my skills in web development and UI design, emphasizing attention to detail and
+                    consistency for a cohesive user experience.
+                </p>
+                <div class="project_url">
+                    <button href="https://attires-3276a.web.app/" class="button">Live Demo</button>
+                    <button href="https://ganeshraamc.github.io/attiresshopee/" class="button">Github</button>
+                </div>
+            </div>
+            <div class="Project_details">
+                <img src="Todoss.png" alt="Todo">
+                <h2>ToDo List</h2>
+                <p>
+                    For a practical web development endeavor, I created a dynamic Todo List application using HTML, CSS,
+                    and JavaScript. Overcoming challenges such as managing real-time task updates, designing an
+                    intuitive user interface, and ensuring seamless interaction honed my skills in front-end
+                    development. This experience provided a glimpse into the complexities of user-focused applications,
+                    showcasing my commitment to creating functional and visually appealing solutions.
+                </p>
+                <div class="project_url">
+                    <button href="" class="btn">Live Demo</button>
+                    <button href="https://ganeshraamc.github.io/todolist/" class="btn">Github</button>
+                </div>
+            </div>
+            <div class="Project_details">
+                <img src="ClacSS.png" alt="Clac">
+                <h2>Calculator Project</h2>
+                <p>
+                    Implemented and designed a user-friendly calculator with HTML, CSS, and JavaScript. The functional
+                    logic behind the minimalistic interface demonstrates proficiency in front-end development,
+                    showcasing my skills in web development. Throughout the project, I navigated challenges such as
+                    ensuring accurate calculations, effective handling of user inputs, and creating an intuitive
+                    interface.
+                </p>
+                <div class="project_url">
+                    <button href="" class="button">Live Demo</button>
+                    <button href="" class="button">Github</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me-->
+
+    <section class="Contact_me">
+        <div class="contact_container">
+            <center>
+                <h1>Contact Me</h1>
+                <form action="#">
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your Name">
+                        <input type="number" placeholder="Enter your Phone number">
+                        <input type="email" placeholder="Enter your Email address">
+
+                    </div>
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
+                    <button href="" class="button">Submit</button>
+                </form>
+            </center>
+        </div>
+        
+    </section>
+
+    <!--Footer-->
+<footer>
+    <div class="footer">
+        <!-- <p>Copyright <i class="fa-regular fa-copyright"></i> 2024</p> -->
+        &copy; Copyright 2024  ||  Designed by Ganeshram..!
+    </div>
+</footer>
+    <!-- <script src="<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>"></script> -->
+    <script src="index.js"> </script>
+</body>
+
+</html>
