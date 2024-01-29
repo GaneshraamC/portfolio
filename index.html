@@ -26,16 +26,28 @@
             <a href="#home" class="active">Home</a>
             <a href="#About">About</a>
             <a href="#projects">Projects</a>
-            <a href="#Contact_me">Contact</a>
+            <a href="#Contact">Contact</a>
+            <div class="burger" onclick="showNav()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>  
         </nav>
-    </header>
-    <!-- Navlinks responsive Bar
-        <header>
-        <div class="navlinks-responsive-bar" onclick="showNav()">
-            <i class="fa-solid fa-bars-staggered"></i>
+        <!-- hamburger -->
+        <div class="hamburger">
+            <p style="text-align: right;" onclick="closeNav()">
+                <i class="fa-solid fa-circle-xmark" style="color: black;"></i>
+            </p>
+            <!--Navigation links for responsive-->
+            <div class="responsive-navigation-links">
+                <p class="responsive-navigation-links"><a href="#home" >Home</a></p>
+                <p class="responsive-navigation-links"><a href="#About">About</a></p>
+                <p class="responsive-navigation-links"><a href="#projects">Projects</a></p>
+                <p class="responsive-navigation-links"> <a href="#Contact">Contact</a></p>
+            </div>
         </div>
-    </header> -->
+    
+    </header>
 
+    
 
     <!--main section-->
 
@@ -77,6 +89,7 @@
     <!--projects-->
     <section id="projects">
         <h1>Projects</h1>
+        <h2 class="cont">Stuff, I've Worked On..!</h2>
         <div class="project_container">
             <div class="Project_details">
                 <img src="AttiresSS (4).png" alt="Attires">
@@ -89,8 +102,8 @@
                     consistency for a cohesive user experience.
                 </p>
                 <div class="project_url">
-                    <button href="https://attires-3276a.web.app/" class="button">Live Demo</button>
-                    <button href="https://ganeshraamc.github.io/attiresshopee/" class="button">Github</button>
+                    <button class="button"><a href="https://attires-3276a.web.app/" style="color: #1a1a1d;" target="_blank">Live Demo</button></a>
+                    <button class="button"><a href="https://ganeshraamc.github.io/attiresshopee/" style="color: #1a1a1d;" target="_blank">Github</button></a>
                 </div>
             </div>
             <div class="Project_details">
@@ -104,8 +117,8 @@
                     showcasing my commitment to creating functional and visually appealing solutions.
                 </p>
                 <div class="project_url">
-                    <button href="" class="btn">Live Demo</button>
-                    <button href="https://ganeshraamc.github.io/todolist/" class="btn">Github</button>
+                    <button class="btn"><a href="" style="color: #1a1a1d;" target="_blank">Live Demo</button></a>
+                    <button class="btn"><a href="https://ganeshraamc.github.io/todolist/" style="color: #1a1a1d;" target="_blank">Github</button></a>
                 </div>
             </div>
             <div class="Project_details">
@@ -119,34 +132,33 @@
                     interface.
                 </p>
                 <div class="project_url">
-                    <button href="" class="button">Live Demo</button>
-                    <button href="" class="button">Github</button>
+                    <button class="button"><a href="" style="color: #1a1a1d;" target="_blank">Live Demo</button></a>
+                    <button class="button"><a href="https://ganeshraamc.github.io/Calculator/" style="color: #1a1a1d;" target="_blank">Github</button></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!--Contact Me-->
-
-    <section class="Contact_me">
+    <section class="Contact">
         <div class="contact_container">
             <center>
                 <h1>Contact Me</h1>
-                <form action="#">
+                <form onsubmit="sendMail(); return false;">
                     <div class="input_box">
-                        <input type="text" placeholder="Enter your Name">
-                        <input type="number" placeholder="Enter your Phone number">
-                        <input type="email" placeholder="Enter your Email address">
-
+                        <input type="text" id="name" placeholder="Enter your Name" class="name">
+                        <input type="number" id="phone" placeholder="Enter your Phone number" class="phone">
+                        <input type="email" id="email" placeholder="Enter your Email address" class="email">
+                        <textarea id="msg" class="msg" cols="30" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="button">Submit</button>
                     </div>
-                    <textarea name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
-                    <button href="" class="button">Submit</button>
                 </form>
             </center>
         </div>
-        
     </section>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+    
     <!--Footer-->
 <footer>
     <div class="footer">
@@ -155,7 +167,9 @@
     </div>
 </footer>
     <!-- <script src="<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"> </script>
+    
 </body>
 
 </html>
